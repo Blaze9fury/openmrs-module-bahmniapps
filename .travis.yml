@@ -5,7 +5,7 @@ before_install:
   - if [[ `npm -v` == 3.10.8 ]]; then npm i -g npm@3.10.7; fi
   - npm --version
   - npm config set spin false
-
+  # test run
   # https://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-a-GUI
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
